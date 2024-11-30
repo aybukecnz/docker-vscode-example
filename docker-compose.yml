@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .  # Dockerfile'ı bu dizinden alacak
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/usr/src/app
