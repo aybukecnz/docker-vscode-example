@@ -24,17 +24,19 @@ VSCode ve gerekli uzantılar, Docker container içinde çalışır.
 
 ### 1. Proje klasörüne gidin
 Terminal veya PowerShell açın ve proje klasörüne gidin:
-
 ```bash
-cd /path/to/docker-vscode-example
-
+cd /path/to/docker-vscode-example 
+```
 ### 2. Docker image oluştur
+```bash
 docker build -t vscode-dev .
-
-###3. Container çalıştır
+```
+### 3. Container çalıştır
+```bash
 docker run -it -p 8080:8080 vscode-dev
+```
 Bu komut container’ı başlatır ve VSCode ortamını hazırlar.
 
-###4. VSCode ile bağlanma (opsiyonel)
+### 4. VSCode ile bağlanma (opsiyonel)
 VSCode → Remote Explorer → Containers → Connect
 Container içindeki ortam ile geliştirmeye başlayabilirsiniz.
